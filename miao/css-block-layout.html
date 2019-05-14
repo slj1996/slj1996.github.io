@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color:black;
+            widows:100%;
+        }
+        p,.content{
+            width:600px;
+            margin: auto;
+        }
+        header>p{
+            color:#ffffff;
+            background-color: black;
+        }
+        .box>div{
+            width: 170px;
+            height: 30px;
+            background-color: pink;
+            border: 5px solid black;
+            margin-top: 15px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .box{
+            margin-top: 15px;
+        }
+        .box>div:nth-child(3n+2){
+            margin-top:-40px;
+            margin-left:210px; 
+        }
+        .box>div:nth-child(3n+3){
+            margin-top:-40px;
+            margin-left:420px; 
+        }
+        section{
+            margin-top: 15px;
+        }
+        .box>div:hover{
+            background-color: red;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 15px;
+        }
+        li:nth-child(-n+4){
+            border-bottom:1px dotted;
+        }
+        footer{
+            width: 100%;
+            background-color: #ee82ee;
+            margin-top: 15px;
+        }
+        footer>p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>hello world 请调整视窗大小看看效果</p>
+    </header>
+    <div class="content">
+        <section>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</section>
+        <div class="box">
+            <div>宽180 高40(含边框)</div>
+            <div>水平间距30px</div>
+            <div>产品</div>
+            <div>水平间距30px</div>
+            <div>产品</div>
+            <div>产品</div>
+            <div>垂直间距15px</div>
+            <div>产品</div>
+            <div>产品</div>
+            <div>边框5px</div>
+            <div>产品</div>
+            <div>产品</div>
+        </div>
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+    </div>
+    <footer>
+        <p>©版权所有</p>
+        <p>本页所有布局均使用块元素</p>
+    </footer>
+</body>
+</html>
