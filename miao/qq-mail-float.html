@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        min-width: 800px;
+        }
+        .header{
+        width: 100%;
+        height: 66px;
+        background-color: rgba(0,0,0,0.08);
+        /* border-bottom:1px solid; */
+        }
+        .header-left{
+        width:400px;
+        height: 66px;
+        background-color: blue;
+        float:left;
+        }
+        .header-right{
+        width: 300px;
+        height: 66px;
+        background-color: red;
+        float:right;
+        }
+        main{
+        width: 100%;
+        background-color: rgba(0,0,0,0.08);
+        margin-top:5px;
+        }
+        .main-left{
+        width: 200px;
+        height:800px;
+        background-color: #fff;
+        float:left;
+        margin-right: 5px;
+        }
+        .main-right{
+        width:calc(100% - 205px);
+        height: 800px;
+        background-color: rgba(168,157,0,0.3);
+        float:left;
+        }
+        .small{
+        height: 150px;
+        background-color: pink;
+        }
+        .larger{
+        height: 650px;
+        background-color: rgba(0,255,0,0.08);
+        margin-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left"></div>
+        <div class="header-right"></div>
+    </div>
+    <main>
+        <div class="main-left">
+            <div class="small"></div>
+            <div class="larger"></div>
+        </div>
+        <div class="main-right"></div>
+    </main>
+</body>
+</html>
