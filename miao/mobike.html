@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mobike</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+        width: 100%;
+        border:2px solid;
+        display:flex;
+        flex-wrap:wrap;
+        }
+        h3{
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+        section>div{
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-position: center center;
+        flex-grow:1;
+        }
+        .img1{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-01.jpg);
+        }
+        .img2{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-02.jpg);
+        }
+        .img3{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-03.jpg);
+        }
+        .img4{
+        background-image: url(https://mobike.com/cn/assets/themes/moby/img/promo-04.jpg);
+        }
+        @media(max-width:1200px) and (min-width:900px){
+            section div{
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="img1"><h3>大国品牌</h3></div>
+        <div class="img2"><h3>摩拜科技</h3></div>
+        <div class="img3"><h3>摩拜生活</h3></div>
+        <div class="img4"><h3>摩拜校招</h3></div>
+    </section>
+</body>
+</html>
