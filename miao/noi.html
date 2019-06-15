@@ -1,44 +1,44 @@
 <script id="ch0103/01" type="x">
-  var A = prompt("请输入整数:");
-  var B = prompt("请输入整数:");
+  var A = +prompt("请输入整数:");
+  var B = +prompt("请输入整数:");
   s = A + B;
   console.log(s);
 </script>
 
 <script type="x" id="ch0103/02">
-  var a = prompt("请输入整数:");
-  var b = prompt("请输入整数:");
-  var c = prompt("请输入整数:");
+  var a = +prompt("请输入整数:");
+  var b = +prompt("请输入整数:");
+  var c = +prompt("请输入整数:");
   s = (a + b) * c;
   console.log(s);
 </script>
 
 <script type="x" id="ch0103/03">
-  var a = prompt("请输入整数:");
-  var b = prompt("请输入整数:");
-  var c = prompt("请输入整数:");
+  var a = +prompt("请输入整数:");
+  var b = +prompt("请输入整数:");
+  var c = +prompt("请输入整数:");
   s = (a + b) / c;
   console.log(s);
 </script>
 
 <script type="x" id="ch0103/04">
-  var a = prompt("请输入整数:");
-  var b = prompt("请输入整数:");
+  var a = +prompt("请输入整数:");
+  var b = +prompt("请输入整数:");
   r = Math.floor(a / b);
   console.log(r);
   console.log(a % b);
 </script>
 
 <script type="x" id="ch0103/05">
-  var a = prompt("请输入整数:");
-  var b = prompt("请输入整数:");
+  var a = +prompt("请输入整数:");
+  var b = +prompt("请输入整数:");
   s = a / b;
   console.log(s.toFixed(9));
 </script>
 
 <script type="x" id="ch0103/06">
-  var a = prompt("请输入整数:");
-  var b = prompt("请输入整数:");
+  var a = +prompt("请输入整数:");
+  var b = +prompt("请输入整数:");
   s = (b / a) * 100;
   console.log(s.toFixed(3) + "%");
 </script>
@@ -55,14 +55,14 @@
 </script>
 
 <script type="x" id="ch0103/08">
-  var F = prompt("请输入华氏度:");
+  var F = +prompt("请输入华氏度:");
   var C = (5 * (F - 32) / 9);
   C = C.toFixed(5);
   console.log(C);
 </script>
 
 <script type="x" id="ch0103/09">
-  var r = prompt("请输入圆的半径:");
+  var r = +prompt("请输入圆的半径:");
   const pi = 3.14159;
   d = (2 * r).toFixed(4);
   c = (pi * d).toFixed(4);
