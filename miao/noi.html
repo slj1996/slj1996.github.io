@@ -1,333 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>NOI</title>
-	<script type="x" id="ch0103/01">
-		var A = +prompt("A:"),
-			B = +prompt("B:");
-		console.log(A + B);
-	</script>
-	<script type="x" id="ch0103/02">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = +prompt("c:");
-		console.log((a + b) * c);
-	</script>
-	<script type="x" id="ch0103/03">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = +prompt("c:");
-		console.log((a + b) / c);
-	</script>
-	<script type="x" id="ch0103/04">
-		var a = +prompt('a:'),
-			b = +prompt("b:"),
-			c = a % b,
-			d = (a - c) / b;
-		console.log(d, c);
-	</script>
-	<script type="x" id="ch0103/05">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log((a / b).toFixed(9));
-	</script>
-	<script type="x" id="ch0103/06">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log((b / a).toFixed(5) * 100 + "%");
-	</script>
-	<script type="x" id="ch0103/07">
-		var a = prompt("a:"),
-			b = prompt("b:"),
-			c = prompt("c:"),
-			d = prompt("d:"),
-			x = prompt("x:");
-		console.log(Number((a * Math.pow(x, 3) + b * Math.pow(x, 2) + c * x + d)).toFixed(7));
-	</script>
-	<script type="x" id="ch0103/08">
-		var f = prompt("f:");
-		console.log((5 * (f - 32) / 9).toFixed(5));
-	</script>
-	<script type="x" id="ch0103/09">
-		var pi = 3.14159,
-			r = prompt("r:"),
-			d = (2 * r).toFixed(4),
-			l = (2 * pi * r).toFixed(4),
-			s = pi * Math.pow(r, 2).toFixed(4);
-		console.log("直径:" + d, "周长:" + l, "面积:" + s);
-	</script>
-	<script type="x" id="ch0103/10">
-		var r1 = prompt("r1:"),
-			r2 = prompt("r2:");
-		console.log((1 / (1 / r1 + 1 / r2)).toFixed(2));
-	</script>
-	<script type="x" id="ch0103/11">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log(a % b);
-	</script>
-	<script type="x" id="ch0103/12">
-		var r = prompt("r:");
-		console.log((4 / 3 * Math.PI * Math.pow(r, 3)).toFixed(2));
-	</script>
-	<script type="x" id="ch0103/13">
-		var num = prompt("num:");
-		console.log(num.split("").reverse().join(""));
-	</script>
-	<script type="x" id="ch0103/14">
-		var h = prompt("h:"),
-			r = prompt("r:");
-		console.log(Math.ceil(20000 / (Math.PI * Math.pow(r, 2) * h)));
-	</script>
-	<script type="x" id="ch0103/15">
-		var n = prompt("n:"),
-			x = prompt("x:"),
-			y = prompt("y:");
-		console.log(n - Math.ceil(y / x));
-	</script>
-	<script type="x" id="ch0103/16">
-		var Xa = prompt("Xa"),
-			Ya = prompt("Ya"),
-			Xb = prompt("Xb"),
-			Yb = prompt("Yb");
-		console.log(Math.sqrt(Math.pow(Xa - Xb, 2) + Math.pow(Ya - Yb, 2)).toFixed(3));
-	</script>
-	<script type="x" id="ch0103/17">
-		var x1 = prompt("x1:"),
-			y1 = prompt("y1:"),
-			x2 = prompt("x2:"),
-			y2 = prompt("y2:"),
-			x3 = prompt("x3:"),
-			y3 = prompt("y3:");
-		console.log(((x1 * y2 + y1 * x3 + x2 * y3 - x1 * y3 - y2 * x2 - y2 * x3) / 2).toFixed(2));
-	</script>
-	<script type="x" id="ch0103/18">
-		var a1 = prompt("a1:"),
-			a2 = prompt("a2:"),
-			n = prompt("n:");
-		console.log(Number(a1) + (n - 1) * (a2 - a1));
-	</script>
-	<script type="x" id="ch0103/19">
-		var A = prompt("A:"),
-			B = prompt("B:");
-		console.log(A * B);
-	</script>
-	<script type="x" id="ch0103/20">
-		var n = prompt("n:");
-		console.log(Math.pow(2, n));
-	</script>
-	<script type="x" id="ch0104/01">
-		var n = prompt("n:");
-		if (n > 0) {
-			console.log("positive");
-		} else if (n == 0) {
-			console.log("zero");
-		} else {
-			console.log("negative");
-		}
-	</script>
-	<script type="x" id="ch0104/02">
-		var num = prompt("num:");
-		console.log(Math.abs(num).toFixed(2));
-	</script>
-	<script type="x" id="ch0104/03">
-		var num = prompt("num:");
-		if (num % 2 === 0) {
-			console.log("even");
-		} else {
-			console.log("odd");
-		}
-	</script>
-	<script type="x" id="ch0104/04">
-		var a = prompt("a:");
-		if (a.charCodeAt(0) % 2 === 0) {
-			console.log("No");
-		} else {
-			console.log("YES");
-		}
-	</script>
-	<script type="x" id="ch0104/05">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		if (a > b) {
-			console.log(">");
-		} else if (a === b) {
-			console.log("=");
-		} else {
-			console.log("<");
-		}
-	</script>
-	<script type="x" id="ch0104/06">
-		var num = prompt("num:");
-		if (num >= 10 && num <100) {
-			console.log(1);
-		} else {
-			console.log(0);
-		}
-	</script>
-	<script type="x" id="ch0104/07">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		console.log(Math.floor(a / 10) + Math.floor(b / 20));
-	</script>
-	<script type="x" id="ch0104/08">
-		var a = prompt("a:");
-		if (a % 3 === 0 && a % 5 === 0) {
-			console.log("YES");
-		} else {
-			console.log("NO");
-		}
-	</script>
-	<script type="x" id="ch0104/09">
-		var a = prompt("a:");
-		var arr = [];
-		if (a % 3 === 0) {
-			arr.push('3')
-		}
-		if (a % 5 === 0) {
-			arr.push('5');
-		}
-		if (a % 7 === 0) {
-			arr.push("7");
-		}
-		if (arr.length) {
-			console.log(arr.join(" "));
-		} else {
-			console.log("n");
-		}
-	</script>
-	<script type="x" id="ch0104/10">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		if (a < 60 ^ b < 60) {
-			console.log(1);
-		} else {
-			console.log(0)
-		}
-	</script>
-	<script type="x" id="ch0104/11">
-		var a = prompt("a:");
-		if (a == 1 || a == 3 || a == 5) {
-			console.log("NO");
-		} else {
-			console.log("YES");
-		}
-	</script>
-	<script type="x" id="ch0104/12">
-		var a = prompt("a:"),
-			m = a / 3 + 50;
-			n = a / 1.2;
-		if (m < n) {
-			console.log("Bike");
-		} else if (m === n) {
-			console.log("All");
-		} else {
-			console.log("Walk");
-		}
-	</script>
-	<script type="x" id="ch0104/13">
-		var x = +prompt("x:");
-		if (x >= 0 && x < 5) {
-			console.log((-x + 2.5).toFixed(3));
-		} else if (x >= 5 && x < 10) {
-			console.log((2 - 1.5 * Math.pow(x - 3, 2)).toFixed(2));
-		} else if (x >= 10 && x < 20) {
-			console.log((x / 2 -1.5).toFixed(2));
-		}
-	</script>
-	<script type="x" id="ch0104/14">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		if (a <= 1000) {
-			if (b === 'n') {
-				console.log(8);
-			} else if (b === 'y') {
-				console.log(13);
-			}
-		} else {
-			var c = Math.ceil((a - 1000) / 500) * 4;
-			if (b === 'n') {
-				console.log(c + 8);
-			} else if (b === 'y') {
-				console.log(c + 13);
-			}
-		}
-	</script>
-	<script type="x" id="ch0104/15">
-		var a = prompt("a:"),
-			b = prompt("b:"),
-			c = prompt("c:");
-		console.log(Math.max(a, b, c));
-	</script>
-	<script type="x" id="ch0104/16">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = +prompt("c:");
-		if (a + b > c && a + c > b && b + c > a) {
-			console.log("yes");
-		} else {
-			console.log("no");
-		}
-	</script>
-	<script type="x" id="ch0104/17">
-		var a = prompt("a:");
-		if ((a % 4 === 0 && a % 100 !== 0) || a % 400 === 0) {
-			console.log("Y");
-		} else {
-			console.log("N");
-		}
-	</script>
-	<script type="x" id="ch0104/18">
-		var a = prompt("a:"),
-			b = prompt("b:");
-		if (a >= -1 && a <=1 && b >= -1 && b <= 1) {
-			console.log("yes");
-		} else {
-			console.log("no");
-		}
-	</script>
-	<script type="x" id="ch0104/19">
-		var a = +prompt("a:"),
-			b = +prompt("b:"),
-			c = prompt("c:");
-		if (b == 0) {
-			console.log("Divided by zero!");
-		} else {
-			if (c === '+') {
-				console.log(a + b);
-			} else if (c === '-') {
-				console.log(a - b);
-			} else if (c === '*') {
-				console.log(a * b);
-			} else if (c === '') {
-				console.log(a / b);
-			} else {
-				console.log("Invalid operator");
-			}
-		}
-	</script>
-	<script type="x" id="ch0104/20">
-		var a = prompt("a:"),
-			b = prompt("b:"),
-			c = prompt("c:");
-		var delta = b * b - 4 * a * c;
-		if (delta > 0) {
-			console,log(`x1=${((-b + Math.sqrt(delta)) / (2 * a)).toFixed(5)};x2=${((-b - Math.sqrt(delta)) / (2 * a)).toFixed(5)}`)
-		} else if (delta === 0) {
-			console.log(`x1=x2=${(-b / (2 * a)).toFixed(5)}`);
-		} else {
-			console.log(`x1=${(-b / (2 * a)).toFixed(5)}+${(Math.sqrt(-delta) / (2 * a)).toFixed(5)}i;x2=${(-b / (2 * a)).toFixed(5)}-${(Math.sqrt(-delta) / (2 * a)).toFixed(5)}i`)
-		}
-	</script>
-	<script type="x" id="ch0104/21">
-		var n = prompt("n:"),
-			x = prompt("x:"),
-			y = prompt("y:");
-		console.log(n - Math.ceil(y / x));
-	</script>
-</head>
-<body>
-	
-</body>
-</html>
+<script id="ch0103/01" type="x">
+  var A = prompt("请输入整数:");
+  var B = prompt("请输入整数:");
+  console.log(A + B);
+</script>
+
+<script type="x" id="ch0103/02">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  var c = prompt("请输入整数:");
+  console.log((a + b) * c)
+</script>
+
+<script type="x" id="ch0103/03">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  var c = prompt("请输入整数:");
+  console.log((a + b) / c)
+</script>
+
+<script type="x" id="ch0103/04">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  r = Math.floor(a / b);
+  console.log(r);
+  console.log(a % b);
+</script>
+
+<script type="x" id="ch0103/05">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  var c = prompt("请输入整数:");
+  console.log((a + b) * c)
+</script>
+
+<script type="x" id="ch0103/06">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  
+  console.log(Math.floor(a / b * 1000) / 1000 + '%')
+</script>
+
+<script type="x" id="ch0103/07">
+  var a = prompt("请输入整数:");
+  var b = prompt("请输入整数:");
+  var c = prompt("请输入整数:");
+  var d = prompt("请输入整数:");
+  var x = prompt("请输入整数:");
+  var f = (a * x ** 3 + b * x ** 2 + c * x + d);
+  f = f.toFixed(7);
+  console.log(f);
+</script>
+
+<script type="x" id="ch0103/08">
+  var F = prompt("请输入华氏度:");
+  var C = (5 * (F - 32) / 9);
+  C = C.toFixed(5);
+  console.log(C);
+</script>
+
+<script type="x" id="ch0103/09">
+  var r = prompt("请输入圆的半径:");
+  const pi = 3.14159;
+  d = 2 * r;
+  c = pi * d;
+  s = pi * (r ** 2)
+  
+  console.log(d, c, s);
+</script>
+
+<script type="x" id="ch0103/10">
+  var r1 = +prompt("请输入:");
+  var r2 = +prompt("请输入:");
+  R = 1 / (1 / r1 + 1 / r2);
+  R = R.toFixed(2);
+  console.log(R);
+</script>
+
+<script type="x" id="ch0103/11">
+  var a = +prompt("请输入:");
+  var b = +prompt("请输入:");
+  k = Math.floor(a / b);
+  r = a - k * b;
+  r = +(r.toFixed(9).toString())
+  console.log(r);
+</script>
+
+<script type="x" id="ch0103/12">
+  var r = +prompt("请输入:");
+  var pi = 3.14;
+  V = 4 / 3 * pi * (r ** 3)
+  console.log(V.toFixed(2));
+</script>
+
+<script type="x" id="ch0103/13">
+  var n = +prompt("请输入:");
+  a = ((n % 100) % 10).toString();
+  b = Math.floor((n % 100) / 10).toString();
+  c = Math.floor(n / 100).toString();
+  n = (a + b + c);
+  console.log(n);
+</script>
+
+<script type="x" id="ch0103/14">
+  var h = +prompt("请输入:");
+  var r = +prompt("请输入:");
+  var pi = 3.14159;
+  V = pi * r * r * h;
+  a = (20 * 1000) / V;
+  console.log(Math.ceil(a));
+</script>
+
+<script type="x" id="ch0103/15">
+  var n = +prompt("请输入:");
+  var x = +prompt("请输入:");
+  var y = +prompt("请输入:");
+  a = n - Math.ceil(y / x)
+  console.log(a);
+</script>
+
+<script type="x" id="ch0103/16">
+  var Xa = +prompt("请输入:");
+  var Ya = +prompt("请输入:");
+  var Xb = +prompt("请输入:");
+  var Yb = +prompt("请输入:");
+  L = Math.abs(Math.sqrt((Xa - Xb) ** 2 + (Ya - Yb) ** 2));
+  console.log(L.toFixed(3));
+</script>
+
+<script type="x" id="ch0103/17">
+  var x1 = +prompt("请输入:");
+  var y1 = +prompt("请输入:");
+  var x2 = +prompt("请输入:");
+  var y2 = +prompt("请输入:");
+  var x3 = +prompt("请输入:");
+  var y3 = +prompt("请输入:");
+  var s = ((x1 * y2 - x2 * y1) + (x2 * y3 - x3 * y2) + (x3 * y1 - x1 * y3))/2;
+  s = s.toFixed(2); 
+  console.log(s);
+</script>
+
+<script type="x" id="ch0103/18">
+  var a1 = +prompt("请输入:");
+  var a2 = +prompt("请输入:");
+  var n = +prompt("请输入:");
+  an = (a2 - a1) * (n-1) + a1;
+  console.log(an);
+</script>
+
+<script type="x" id="ch0103/19">
+  var A = +prompt("请输入:");
+  var B = +prompt("请输入:");
+  s = A * B;
+  console.log(s);
+</script>
+
+<script type="x" id="ch0103/20">
+  var n = +prompt("请输入:");
+  s = 2 ** n;
+  console.log(s);
+</script>
