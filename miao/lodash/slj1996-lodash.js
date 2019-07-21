@@ -2,10 +2,14 @@ var slj1996 = function () {
     
     function chunk (array,number) {
         let arr = [];
-        for (var i = 0 ; i < array.length;i++) {
+        for (var i = 0 ; i < number;i++) {
             arr.push(array.shift())
         }
         return [arr,array];
+    }
+
+    function compact (array) {
+        return array.filter(it => it)
     }
 
 
@@ -14,6 +18,7 @@ var slj1996 = function () {
 
     return {
         chunk,
+        compact,
     }
 
 
